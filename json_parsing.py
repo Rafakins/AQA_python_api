@@ -1,11 +1,11 @@
-import json
+import json #импортируем библиотеку json для парсинга
 
-string_as_json_format = '{"answer": 30, "name": "Rafael"}'
-object = json.loads(string_as_json_format)
+string_as_json_format = '{"answer": 30, "name": "Rafael"}' #создаем список в который ложим псевдо json, обрати внимание как пишутся несколько ключей ОДИНАРНЫЕ КАВЫЧКИ ТОЛЬКО ТУТ
+object = json.loads(string_as_json_format) #парсим наш список
 
-key = "name"
+key = "name" #присваиваем значение ключу
 
-if key in object:
+if key in object: #если ключ есть в списке - печатаем его значение
     print(object[key])
 else:
-    print(f"Ошибка, ключа {key} в JSON нет")
+    print(f"Ошибка, ключа {key} в JSON нет") #если ключа нет - с помощью f("{}") вставляем переменную key в текст и печатаем аларм
