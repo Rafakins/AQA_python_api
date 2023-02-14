@@ -1,6 +1,7 @@
 import requests
 import pytest
-class TestPositiveUser:
+from lib.base_case import BaseCase # ИЗ (фром) папки lib, файл base_case - импортируем класс (а можно и переменную) Base Case
+class TestPositiveUser(BaseCase):
 
     #параметры выносим до всех функций (независимо от того, в каком тесте мы вызываем этот параметр
     exclude_params = [
